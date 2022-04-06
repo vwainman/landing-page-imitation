@@ -1,0 +1,58 @@
+@import 'reset.css';
+@import 'overlays.css';
+
+body {
+    display: flex;
+    flex-direction: column;
+    /*vh = viewport height */
+    min-height: 100vh;
+    /*vw = viewport width */
+    min-width: 100vw;
+    font-family: 'Roboto';
+}
+
+main {
+    /* sticky footer */
+    flex: 1 1 auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.inner_col {
+    padding: 10px;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.media_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: navy;
+}
+
+/* desktop view */
+@media (min-width: 500px) {
+    .media_container {
+        flex-direction: row;
+
+    }
+
+    .media_container .title_text_button,
+    .media_container .image {
+        flex-basis: 50%;
+        border: 3px solid blue;
+    }
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
