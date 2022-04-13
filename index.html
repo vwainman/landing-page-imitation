@@ -11,17 +11,19 @@
 </head>
 
 <body>
-    <header class="inner_col">
-        <h1>Header Logo</h1>
-        <ul>
-            <li>header link one</li>
-            <li>header link two</li>
-            <li>header link three</li>
-        </ul>
-    </header>
+    <navy_color_wrap>
+        <header class="inner_col">
+            <h1>Header Logo</h1>
+            <ul>
+                <li>header link one</li>
+                <li>header link two</li>
+                <li>header link three</li>
+            </ul>
+        </header>
+    </navy_color_wrap>
     <main>
-        <section class="inner_col">
-            <div class="media_container">
+        <navy_color_wrap>
+            <section class="inner_col" id="media_container">
                 <div class="title_text_button">
                     <h1>This website is awesome</h1>
                     <p>This website has some subtext that goes here under the main title. It's a smaller font and the
@@ -29,32 +31,55 @@
                     <button>Sign up</button>
                 </div>
                 <div class="image">
-                    <img src="assets/pexels-pixabay-235985.jpg" alt="this is a placeholder for an image">
+                    <!-- <img src="" alt="" /> -->
+                    <p>this is a placeholder for an image</p>
                 </div>
-            </div>
+            </section>
+        </navy_color_wrap>
+        <section class="inner_col" id="information_header">
+            <h1>Some random information.</h1>
+            <ul>
+                <li>
+                    <div class="rounded_rect"></div>
+                    <p>this is some subtext under an illustration or image</p>
+                </li>
+                <li>
+                    <div class="rounded_rect"></div>
+                    <p>this is some subtext under an illustration or image</p>
+                </li>
+                <li>
+                    <div class="rounded_rect"></div>
+                    <p>this is some subtext under an illustration or image</p>
+                </li>
+                <li>
+                    <div class="rounded_rect"></div>
+                    <p>this is some subtext under an illustration or image</p>
+                </li>
+            </ul>
         </section>
-        <section>
-            <div class="inner_col">
-                <h1>Some random information.</h1>
-            </div>
-        </section>
-        <section>
-            <div class="inner_col">
-                <h1>Quote</h1>
-            </div>
-        </section>
-        <section>
-            <div class="inner_col">
-                <h1>Call to action</h1>
+        <quote_color_wrap>
+            <section class="inner_col" id="quote">
+                <h1>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or
+                    maybe
+                    people will actually read it. Who knows? All I know is that it looks nice.</h1>
+                <p>-Thor, God of Thunder</p>
+            </section>
+        </quote_color_wrap>
+        <section class="inner_col" id="call_to_action">
+            <div class="blue_container">
+                <div class="blue_container_text">
+                    <h1>Call to action! It's time!</h1>
+                    <p>Sign up for our product by click that button right over there!</p>
+                </div>
+                <button>Sign up</button>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="inner_col">
-            <h1>Copyright Label</h1>
-        </div>
-    </footer>
-    </div>
+    <navy_color_wrap>
+        <footer class="inner_col">
+            <h1>Copyright © The Odin Project 2021</h1>
+        </footer>
+    </navy_color_wrap>
 </body>
 
 </html>
